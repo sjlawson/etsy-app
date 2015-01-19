@@ -1,0 +1,13 @@
+<p>
+  <strong>Name:</strong>
+  <%= @category.name %>
+</p>
+
+<p>
+  <strong>Thumburl:</strong>
+  <%= image_tag @category.thumburl %>
+</p>
+
+<%= link_to "Delete", categories_delete_path(:id => @category.id) %> |
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>

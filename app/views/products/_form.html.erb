@@ -1,0 +1,22 @@
+<%= form_for(@product) do |f| %>
+
+  <div class="product_name">
+    <%= f.label :product_name %><br />
+    <%= f.text_field :product_name %>
+  </div>
+  <div class="description">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="price">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="thumburl">
+    <%= f.label :thumburl %> <br />
+    <%= f.url_field :thumburl %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

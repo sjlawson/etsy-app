@@ -1,0 +1,43 @@
+<!--=== Top ===-->
+<div class="browse">
+  <div class="container">
+    <ul>
+      <li>Art</li>
+      <li>Home &amp; Living</li>
+      <li>Jewelry</li>
+      <li>Books &amp; Music</li>
+      <li>Women</li>
+      <li>Men</li>
+      <li>Kids</li>
+      <li>Vintage</li>
+      <li>Weddings</li>
+      <li>Crafts</li>
+    </ul>
+  </div>
+</div>
+
+<div class="top">
+    <div class="container">
+    <div class="logo">
+      <img src="https://www.etsy.com/assets/dist/images/etsylogo.20140703190113.png">
+    </div>
+    <div>
+        <ul class="header-nav">
+            <% if user_signed_in? %>
+              Logged in as <strong>
+                <%= current_user.email %>
+              </strong>.
+              <%= link_to "Sign out", destroy_user_session_path, method: :delete, :class => "btn btn-default" %>
+            <% else %>
+              <%= link_to "Sign up", new_user_registration_path, :class => "btn btn-default" %>
+              <%= link_to "Sign in", new_user_session_path, :class => "btn btn-default" %>
+            <% end %>
+            <li class="account">
+              <div class="cart pull-right">
+                <div class="fa fa-shopping-cart fa-2x">
+                </div>
+              </div>
+          </li>
+        </ul>
+    </div>
+</div>
