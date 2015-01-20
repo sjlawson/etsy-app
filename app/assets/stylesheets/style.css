@@ -1,0 +1,172 @@
+@font-face {
+  font-family:"Guardian-EgypTT";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/Guardian-EgypTT-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family:"Guardian-EgypTT";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/Guardian-EgypTT-Medium.woff") format("woff");
+}
+
+
+body {
+  background-color: #efefeb;
+  font-family: "Arial","Helvetica",sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Browse */
+.browse {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.header-nav {
+  list-style-type: none;
+}
+
+.browse ul,
+.account ul,
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.browse li {
+  color: #666;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 10px 12px;
+}
+
+
+/* Header */
+.header {
+  background-color: #fff;
+}
+
+.logo {
+  float: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.account {
+  float: right;
+}
+
+.account li {
+  display: inline-block;
+  font-size: 14px;
+  height: 33px;
+  margin-top: 33px;
+  margin-right: 14px;
+}
+
+.account a {
+  color: #0192b5;
+}
+
+.btn-default {
+  background-color: #fff;
+  border-color: #0192b5;
+}
+
+.cart {
+  border-left: 1px solid rgba(0,0,0,0.1);
+  color: #888;
+  margin-left: 10px;
+  margin-top: 13px;
+  padding-left: 20px;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  height: 400px;
+  width: 100%;
+  background-image: url("http://img0.etsystatic.com/site-assets/homepage-carousel/shc-hunterpassleather.jpg");
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  color: #fff;
+
+  padding: 30px 0;
+  text-shadow: 0 2px 1px rgba(0,0,0,.2);
+  font-family: 'Guardian-EgypTT', Georgia, serif;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+/* Trending */
+.trending {
+  padding: 60px;
+}
+
+.trending h2 {
+  text-shadow: 0 2px 1px rgba(255,255,255,.8);
+  font-family: 'Guardian-EgypTT', Georgia, serif;
+  color: #333;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+
+.trending p {
+  color: #888;
+  font-family: "Guardian-EgypTT", Georgia, serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.listing-title {
+  color: #666;
+}
+
+.listing-price {
+  color: #78c042;
+}
+
+/* Footer */
+
+.footer .container {
+  border-top: 1px solid #e2e2e2;
+  margin-top: 20px;
+  padding-top: 46px;
+  padding-bottom: 46px;
+}
+
+.footer h4 {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.footer h4,
+.footer li {
+  margin-bottom: 8px;
+}
+
+.footer li a {
+  font-size: 11px;
+}
+
+.footer i {
+  padding-right: 5px;
+}

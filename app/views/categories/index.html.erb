@@ -8,10 +8,11 @@
             <p>Explore our latest categories from around the world.</p>
           </div>
           <div class="col-md-8">
-            <% @categories.in_groups_of(3).each do |categories| %>
-              <% categories.select! {|x| !x.nil?} %>
+            Category Count: <%= @categories.length %>
+            <% @categories.in_groups_of(3).each do |categoryrow| %>
+              <% categoryrow.select! {|x| !x.nil?} %>
               <div class='row'>
-                <% categories.each do |category| %>
+                <% categoryrow.each do |category| %>
                   <div class='col-md-4'>
                     <div class="thumbnail">
                         <img src= <%= category.thumburl %> >
@@ -32,30 +33,6 @@
 
       </div>
     </div>
-
-<table>
-  <thead>
-    <tr>
-      <th>Category name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @categories.each do |category| %>
-      <tr>
-        <td><%= category.name %></td>
-        <div class="thumbnail">
-           <img src= <%=category.thumburl %> >
-        <div>
-        <td><%= link_to 'Show', category %></td>
-        <td><%= link_to 'Edit', edit_category_path(category) %></td>
-        <td><%= link_to 'Delete', categories_delete_path(:id => category.id) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
 
 <%= link_to 'New Category', new_category_path %>
 
