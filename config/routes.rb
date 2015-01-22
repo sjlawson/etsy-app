@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   resources :products
   get 'products/:id/delete' => 'products#delete', :as => :products_delete
+  get 'products/:id/destroy' => 'products#destroy', :as => :products_destroy
 
   devise_for :users
 end

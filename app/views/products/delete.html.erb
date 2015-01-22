@@ -18,6 +18,7 @@
     <%= @product.thumburl %>
 </p>
 
-<%= link_to 'Delete', products_delete_path(:id => @product.id) %> |
+<!-- <%= link_to 'Delete', products_delete_path(:id => @product.id) %> | -->
+<%= link_to 'Delete', products_destroy_path(:id => @product.id) %> |
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
